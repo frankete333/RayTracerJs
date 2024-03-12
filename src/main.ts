@@ -25,6 +25,7 @@ function randomImage(width: number, height: number) {
   saveImage(pixels);
 }
 
+// node --max-old-space-size=8192 ./lib/main.js (when running out of memory)
 function mandelbrotFractal(width: number, height: number) {
   // Mandelbort is defined between -2 and 0.47 in X and between -1.12 and 1.12 in Y
   const pixels = [];
